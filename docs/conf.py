@@ -2,7 +2,7 @@ import os
 
 project = "yq"
 copyright = "Andrey Kislyuk"
-author = "Andrey Kislyuk"
+author = "Andrey Kislyuk, tur-ium"
 version = ""
 release = ""
 language = "en"

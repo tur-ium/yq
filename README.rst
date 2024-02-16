@@ -1,6 +1,20 @@
 yq: Command-line YAML/XML/TOML processor - jq wrapper for YAML, XML, TOML documents
 ===================================================================================
 
+Fork maintained by tur-ium. The aim is to make it easy to interface with xq directly from other Python packages (without calling command-line functions)
+
+Usage
+-----
+```python
+result = yq(input_streams=[open(xml_path,'r')],output_stream=output_obj,input_format='xml',output_format='json',program_name='xq',jq_args=xquery_string,exit_func=lambda x: True)
+```
+Building
+--------
+```command-line
+pip3 install --upgrade setuptools setuptools_scm wheel
+python3 setup.py sdist bdist_wheel
+```
+
 Installation
 ------------
 ::

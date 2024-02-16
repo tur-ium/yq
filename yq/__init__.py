@@ -200,8 +200,8 @@ def yq(
     if not output_stream:
         output_stream = sys.stdout
     if not exit_func:
-        exit_func = sys.exit
-    converting_output = True if output_format != "json" else False
+        exit_func = lambda x: True # return True once done
+    converting_output = True # Always convert output
 
     try:
         # Notes: universal_newlines is just a way to induce subprocess to make stdin a text buffer and encode it for us;
